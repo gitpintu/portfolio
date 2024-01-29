@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: hotpink;
+    font-size: 40px;
+}
+.all{
+     display: flex;  
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     justify-content: space-around;
+     
+
+}
+.paragraph{
+    min-width: 33vw;
+    
+
+    
+    
+
+}
+p{
+    font-family: 'Lilita One', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+font-size: 25px;
+
+}
+h2{
+    font-size: 40px;
+    
+    text-align: center;
+
+}
+.container{
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-auto-rows: 120px;
+     box-shadow: 0px 0px 20px rgb(172, 171, 171);
+     min-width: 50vw;
+
+
+}
+#box-1{
+    grid-column: 1/span 3;
+}
+#box-4{
+    grid-row: 2/4;
+}
+#box-2{
+    grid-area: 2/2/3/4;
+}
+#box-3{
+    grid-area: 1/4/4/5 ;
+}
+#box-5{
+    grid-area:3/3/4/4;
+}
+#box-6{
+    grid-area: 3/2/4/3;
+}
+.box{
+    background-size: cover;
+    background-position: top;
+    
+    background-blend-mode:color-burn;
+    transition: all 2s ease-out;
+    
+}
+.box:hover{
+    background-blend-mode:lighten;
+    background-position: center;
+    background-position: left;
+    
+}
+.header{
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    text-shadow: 10px 10px 5px white;
+
+}
+@media screen and (max-width:1024px) {
+    .all{
+    flex-direction:column;
+    }  
+    .container{
+        width: 100vw;
+        grid-row:span 1;
+        grid-column: span 4;
+    }  
+    
+}
